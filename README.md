@@ -3,7 +3,6 @@
 
 ### Arduino code for Protopiper - a computer aided, hand-held fabrication device  ###
 
-* Quick summary
 * version: V3.0
 * official project page: http://hpi.de/baudisch/projects/protopiper.html
 * developed by: Johannes Frohnhofen (mailto: Johannes.Frohnhofen@student.hp)
