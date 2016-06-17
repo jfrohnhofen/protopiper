@@ -1,7 +1,7 @@
 #ifndef __EXTRUDER_H__
 #define __EXTRUDER_H__
 
-#include <Dynamixel.h>
+#include "Dynamixel.h"
 
 class Extruder
 {
@@ -11,12 +11,12 @@ class Extruder
   static const uint16_t forward_velocity = 0x400 + 0x3FF;
   static const uint16_t reverse_velocity = 0x0FF;
   static const uint16_t off_velocity = 0x000;
-  static const float rad_to_cm_ratio = 233;
+  static constexpr float rad_to_cm_ratio = 233-0;
 
   static const uint16_t counter_address = 0x30;
 
   public:
-    Extruder(uint8_t servo_id, uint8_t servo_direstion_pin);
+    Extruder(uint8_t servo_id, uint8_t servo_direction_pin);
     void process();
 
     void onLengthChanged(Callback callback);

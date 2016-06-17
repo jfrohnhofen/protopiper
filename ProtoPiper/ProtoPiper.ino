@@ -1,13 +1,15 @@
-#include <Adafruit_LEDBackpack.h>
-#include <Battery.h>
-#include <Button.h>
-#include <Cutter.h>
-#include <Display.h>
-#include <Dynamixel.h>
-#include <EEPROM.h>
-#include <Extruder.h>
-#include <Selector.h>
-#include <Wire.h>
+
+
+#include "Adafruit_LEDBackpack.h"
+#include "Battery.h"
+#include "Button.h"
+#include "Cutter.h"
+#include "Display.h"
+#include "Dynamixel.h"
+#include "EEPROM.h"
+#include "Extruder.h"
+#include "Selector.h"
+#include "Wire.h"
 
 typedef enum {STANDBY, TUBE_A, TUBE_B, TUBE_C, DIAGONAL_AA, DIAGONAL_AB, DIAGONAL_AC, DIAGONAL_BC, DIAGONAL_ABC, COUNTER_TAPE, COUNTER_STRAIGHT, COUNTER_CONNECTOR, BATTERY} Tool;
 char *texts[13] = {"IDLE", "A   ", "B   ", "C   ", "AA  ", "AB  ", "AC  ", "BC  ", "D3  ", "0000", "S   ", "C   ", "BATT"};
